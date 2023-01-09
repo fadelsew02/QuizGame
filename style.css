@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --question-color:rgb(80, 20, 100);
+    --answer-color:#ff702a;
+    --text-color:#fff;
+    --goodAnswer-color:rgb(20, 230, 20);
+    --badAnswer-color:rgb(225, 25, 25);
+    --question-font: 1.65rem;
+    --answer-font: 1.4rem;
+}
+body{
+    overflow-y: hidden;
+    background: url('images/fond5.jpg');
+    background-size: cover;
+}
+
+header{
+    padding: 1% 2% 0 0.5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header div h1{
+    margin: 0 0 20px 0;
+}
+
+header div span{
+    font-weight: 1000;
+    font-size: var(--question-font);
+}
+
+.time{
+    font-weight: 700;
+    margin: 50px 0 0 0;
+    font-size: var(--answer-font);
+}
+
+section{
+    margin: -2% 10% 0 10%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows:500px 500px;
+}
+
+section div:not(first-child){
+    border-radius: 75px;
+}
+.question{
+    margin: 20% 2% 5% 15%;
+    background: var(--question-color);
+    border-radius: 75px;
+}
+
+.proposition{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20% 5% 0 2%;
+    padding: 10px 0 0 0;
+} 
+
+#a1{
+    margin: 5% 0 0 0;
+    padding: 0;
+}
+
+#a1, #a2, #a3, #a4{
+    margin: 4% 0 4% 0;
+    background: var(--answer-color);
+    cursor: pointer;
+}
+
+#question1{
+    position: relative;
+    top: 45%;
+    left:15%;
+    font-size: var(--question-font);
+    color: var(--text-color);
+}
+#span1, #span2, #span3, #span4{
+    position: relative;
+    top: 29%;
+    left:40%;
+    font-size: var(--answer-font);
+    color: var(--text-color);
+}
