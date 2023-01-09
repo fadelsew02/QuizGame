@@ -71,7 +71,7 @@ function initialise_questions() {
 
     a++;
     if (a < 3) {
-        setTimeout("initialise_questions()", 7000);
+        setTimeout("initialise_questions()", 10000);
     }
 
     console.log(stockage);
@@ -81,6 +81,7 @@ function initialise_questions() {
 let b = 0;
 
 function afficheResultats() {
+    console.log("je suis ici");
     const answer1 = document.querySelector('.answer1');
     const answer2 = document.querySelector('.answer2');
     const answer4 = document.querySelector('.answer4');
@@ -173,3 +174,10 @@ function f() {
 
     initialise_questions();
 }
+
+// let s = 0;
+// while (s < 100000) {
+//     s++;
+// }
+
+// afficheResultats();
