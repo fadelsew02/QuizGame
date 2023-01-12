@@ -165,7 +165,7 @@ function afficheResultats() {
 }
 
 
-function f() {
+function init() {
     var nomJoueur = prompt("Entrez un nom");
 
     alert("Vous disposez de 30 secondes pour répondre à un maximum de questions");
